@@ -1,0 +1,24 @@
+{
+  "name": "bugsnag-builds",
+  "version": "0.0.0",
+  "description": "A tool for reporting your application's builds to Bugsnag",
+  "main": "index.js",
+  "bin": "bin/cli.js",
+  "scripts": {
+    "test": "tape"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "concat-stream": "^1.6.0",
+    "find-nearest-file": "^1.1.0",
+    "minimist": "^1.2.0",
+    "pino": "^4.10.3",
+    "run-parallel": "^1.1.6"
+  }
+}
