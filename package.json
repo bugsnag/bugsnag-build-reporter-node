@@ -1,15 +1,16 @@
 {
-  "name": "bugsnag-builds",
+  "name": "bugsnag-build-reporter",
   "version": "0.0.0",
   "description": "A tool for reporting your application's builds to Bugsnag",
   "main": "index.js",
   "bin": "bin/cli.js",
   "scripts": {
-    "test": "tape"
+    "test": "standard && nyc --reporter=lcov -- tape lib/**/*.test.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Bugsnag Inc.",
+  "license": "MIT",
   "devDependencies": {
+    "nyc": "^11.4.1",
     "standard": "^10.0.3",
     "tape": "^4.8.0"
   },

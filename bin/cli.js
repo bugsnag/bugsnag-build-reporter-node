@@ -4,7 +4,7 @@ const meow = require('meow')
 
 const argv = meow(`
   Usage
-    $ bugsnag-builds <flags> <metadata>
+    $ bugsnag-build-reporter <flags> <metadata>
 
   Options
     --api-key, -k  Set your notifier API key [required]
@@ -40,7 +40,7 @@ const argv = meow(`
     },
     appVersion: {
       type: 'string',
-      alias: 'a'
+      alias: 'v'
     },
     releaseStage: {
       type: 'string',
@@ -81,5 +81,5 @@ if (argv.flags.sourceControlProvider && argv.flags.sourceControlRepository && ar
   }
 }
 
-console.log(argv.input)
-require('../index')(argv.flags)({})
+// console.log(argv.input)
+require('../index')(argv.flags, process.cwd())
