@@ -4,7 +4,7 @@ A tool for reporting your application's builds to Bugsnag.
 
 ## Usage
 
-This module can be used as a CLI or via task runners such as Gulp/Grunt.
+This module can be used in a Node environment via the JS API or as a CLI.
 
 ### CLI
 
@@ -48,71 +48,15 @@ Examples
 
 ```js
 scripts: {
-  'bugsnag-report-build': 'bugsnag-build -k YOUR_API_KEY -v APP_VERSION'
-}
-```
-
-### gulp
-
-Install as a dev dependency `npm i -D bugsnag-build-reporter`.
-
-_gulpfile.js_
-```js
-const bugsnagBuild = require('bugsnag-build-reporter')
-const gulp = require('gulp')
-
-gulp.task('reportBuildToBugsnag', () => {
-  return bugsnagBuild({
-    apiKey: 'YOUR_API_KEY',
-    appVersion: '1.2.3'
-    /* other options... */
-  })
-})
-```
-
-### grunt
-
-Install as a dev dependency `npm i -D bugsnag-build-reporter`.
-
-_Gruntfile.js_
-```js
-module.exports = function (grunt) {
-  grunt.initConfig({
-    bugsnagBuilds: {
-      apiKey: 'YOUR_API_KEY',
-      appVersion: '1.2.3'
-      /* other options... */
-    }
-  })
-
-  grunt.loadNpmTasks('bugsnag-build')
-}
-```
-
-### Webpack
-
-Install as a dev dependency `npm i -D bugsnag-build-reporter`.
-
-_webpack.config.js_
-```js
-const BugsnagBuildPlugin = require('bugsnag-build-reporter/webpack/build')
-
-module.exports = {
-  plugins: [
-    new BugsnagBuildPlugin({
-      apiKey: 'YOUR_API_KEY',
-      appVersion: '1.2.3'
-      /* other options... */
-    })
-  ]
+  'report-build': 'bugsnag-build-reporter -k YOUR_API_KEY -v APP_VERSION'
 }
 ```
 
 ### JS API
 
 ```js
-const bugsnagBuild = require('bugsnag-build-reporter')
-bugsnagBuild({
+const reportBuild = require('bugsnag-build-reporter')
+reportBuild({
   apiKey: 'YOUR_API_KEY',
   appVersion: '1.2.3',
   /* other options... */
