@@ -25,11 +25,11 @@ const argv = meow(`
 
   Examples
 
-    bugsnag-builds \\
+    bugsnag-build-reporter \\
       --api-key cc814aead128d38d0767094327b4784a \\
       --app-version 1.3.5
 
-    bugsnag-builds \\
+    bugsnag-build-reporter \\
       -k cc814aead128d38d0767094327b4784a \\
       -v 1.3.5
 `, {
@@ -82,4 +82,4 @@ if (argv.flags.sourceControlProvider && argv.flags.sourceControlRepository && ar
 }
 
 // console.log(argv.input)
-require('../index')(argv.flags, process.cwd())
+require('../index')(argv.flags, { path: process.cwd() })
