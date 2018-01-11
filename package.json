@@ -10,10 +10,12 @@
   "author": "Bugsnag Inc.",
   "license": "MIT",
   "devDependencies": {
+    "directory-copy": "^0.1.0",
     "nyc": "^11.4.1",
     "proxyquire": "^1.8.0",
     "standard": "^10.0.3",
-    "tape": "^4.8.0"
+    "tape": "^4.8.0",
+    "tempy": "^0.2.1"
   },
   "dependencies": {
     "chalk": "^2.3.0",
