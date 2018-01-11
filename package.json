@@ -1,6 +1,6 @@
 {
   "name": "bugsnag-build-reporter",
-  "version": "1.0.0-2",
+  "version": "1.0.0-3",
   "description": "A tool for reporting your application's builds to Bugsnag",
   "main": "index.js",
   "bin": "bin/cli.js",
