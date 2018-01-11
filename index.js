@@ -13,7 +13,7 @@ module.exports = (build, opts) => {
     const onError = (error) => {
       log.error(`${error.message}`)
       if (error.errors) {
-        log.error(error.errors.map(e => `  ${e}`).join(''))
+        log.error(`  ${error.errors.join(', ')}`)
       } else {
         log.error(`Error detail…\n${error.stack}`)
       }
