@@ -144,8 +144,8 @@ report-build:
 
 ## Support
 
-- Search open and closed issues for similar problems
-- Report a bug or request a feature
+- [Search open and closed issues](https://github.com/bugsnag/bugsnag-build-reporter/issues?q=is%3Aissue) issues for similar problems
+- [Report a bug or request a feature](https://github.com/bugsnag/bugsnag-build-reporter/issues/new)
 - Email [support@bugsnag.com](mailto:support@bugsnag.com)
 
 ## Contributing
