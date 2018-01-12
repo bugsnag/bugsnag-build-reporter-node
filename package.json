@@ -2,10 +2,21 @@
   "name": "bugsnag-build-reporter",
   "version": "1.0.0-4",
   "description": "A tool for reporting your application’s builds to Bugsnag",
+  "keywords": [
+    "bugsnag",
+    "build",
+    "report",
+    "ci",
+    "cli"
+  ],
   "main": "index.js",
   "bin": "bin/cli.js",
   "scripts": {
     "test": "standard && nyc --reporter=lcov -- tape lib/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugsnag/bugsnag-build-reporter"
   },
   "author": "Bugsnag Inc.",
   "license": "MIT",

@@ -17,7 +17,7 @@ module.exports = (build, opts) => {
       } else {
         log.error(`Error detail…\n${error.stack}`)
       }
-      reject(new Error('BugsnagBuildReporterPlugin failed'))
+      reject(new Error('bugsnag-build-reporter failed'))
     }
 
     const onSuccess = () => {

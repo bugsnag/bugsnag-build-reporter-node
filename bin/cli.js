@@ -15,9 +15,13 @@ const argv = meow(`
     --source-control-repository, -r  Set the repo URL
     --source-control-revision, -e  Set the source control revision id (e.g commit SHA)
 
+    --builder-name, -n  Set the name of the entity that triggered the build
+    --auto-assign-release, -a  Assign any subsequent error reports recieved to this release
+    --auto-assign-release, -a  Assign any subsequent error reports recieved to this release
+    --endpoint, -u Specify an alternative endpoint
+
     --app-version-code, -c  Set the version code (Android only)
     --app-bundle-version, -b  Set the bundle version (iOS/macOS/tvOS only)
-    --builder-name, -n  Set the name of the entity that triggered the build
 
     metadata
       Arbitrary "key=value" pairs will be passed to the build API as metadata
@@ -69,6 +73,14 @@ const argv = meow(`
     builderName: {
       type: 'string',
       alias: 'n'
+    },
+    autoAssignRelease: {
+      type: 'boolean',
+      alias: 'a'
+    },
+    endpoint: {
+      type: 'string',
+      alias: 'u'
     }
   }
 })
@@ -82,4 +94,4 @@ if (argv.flags.sourceControlProvider && argv.flags.sourceControlRepository && ar
 }
 
 // console.log(argv.input)
-require('../index')(argv.flags, { path: process.cwd() })
+require('../index')(argv.flags, { path: process.cwd(), endpoint: argv.flags.endpoint })
