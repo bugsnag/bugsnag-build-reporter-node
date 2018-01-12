@@ -93,6 +93,10 @@ if (argv.flags.sourceControlProvider && argv.flags.sourceControlRepository && ar
   }
 }
 
-require('../index')(argv.flags, { path: process.cwd(), endpoint: argv.flags.endpoint })
-  .then(() => {})
-  .catch(() => { process.exitCode = 1 })
+if (argv.flags.h === true) {
+  argv.showHelp()
+} else {
+  require('../index')(argv.flags, { path: process.cwd(), endpoint: argv.flags.endpoint })
+    .then(() => {})
+    .catch(() => { process.exitCode = 1 })
+}
