@@ -16,8 +16,7 @@ const argv = meow(`
     --source-control-revision, -e  Set the source control revision id (e.g commit SHA)
 
     --builder-name, -n  Set the name of the entity that triggered the build
-    --auto-assign-release, -a  Assign any subsequent error reports recieved to this release
-    --auto-assign-release, -a  Assign any subsequent error reports recieved to this release
+    --auto-assign-release, -a  Assign any subsequent error reports received to this release
     --endpoint, -u Specify an alternative endpoint
 
     --app-version-code, -c  Set the version code (Android only)
