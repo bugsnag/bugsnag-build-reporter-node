@@ -93,5 +93,6 @@ if (argv.flags.sourceControlProvider && argv.flags.sourceControlRepository && ar
   }
 }
 
-// console.log(argv.input)
 require('../index')(argv.flags, { path: process.cwd(), endpoint: argv.flags.endpoint })
+  .then(() => {})
+  .catch(() => { process.exitCode = 1 })
