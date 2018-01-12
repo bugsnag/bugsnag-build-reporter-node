@@ -42,7 +42,7 @@ reportBuild({ apiKey: 'YOUR_API_KEY', appVersion: '1.2.3' }, { /* opts */ })
 - `build` describes the build you are reporting to Bugsnag
   - `apiKey: string` your Bugsnag API key __[required]__
   - `appVersion: string` the version of the application you are building __[required]__
-  - `releaseStage: string` the releaseStage stage (leave blank if this build can be released to different `releaseStage`s)
+  - `releaseStage: string` `'production'`, `'staging'` etc. (leave blank if this build can be released to different `releaseStage`s)
   - `sourceControl: object` an object describing the source control of the build (if not specified, the module will attempt to detect source control information from `.git`, `.hg` and the nearest `package.json`)
     - `provider: string` can be one of: `'github'`, `'github-enterprise'`, `'gitlab'`, `'gitlab-onpremise'`, `'bitbucket'`, `'bitbucket-server'`
     - `repository: string` a URL (`git`/`ssh`/`https`) pointing to the repository, or webpage representing the repository
@@ -136,7 +136,7 @@ scripts: {
 
 ```
 PATH := node_modules/.bin:$(PATH)
-SHELL:=/bin/bash
+SHELL := /bin/bash
 
 report-build:
 	bugsnag-build-reporter -k YOUR_API_KEY -v "1.2.3" -n "Katherine Johnson"
