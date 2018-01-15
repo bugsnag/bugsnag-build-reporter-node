@@ -1,6 +1,6 @@
 {
   "name": "bugsnag-build-reporter",
-  "version": "1.0.0-6",
+  "version": "1.0.0",
   "description": "A tool for reporting your application’s builds to Bugsnag",
   "keywords": [
     "bugsnag",
