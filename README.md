@@ -1,5 +1,5 @@
 # bugsnag-build-reporter
-[![Build status](https://travis-ci.org/bugsnag/bugsnag-build-reporter.svg?branch=master)](https://travis-ci.org/bugsnag/bugsnag-build-reporter)
+[![Build status](https://travis-ci.org/bugsnag/bugsnag-build-reporter-node.svg?branch=master)](https://travis-ci.org/bugsnag/bugsnag-build-reporter-node)
 [![NPM](https://img.shields.io/npm/v/bugsnag-build-reporter.svg)](https://npmjs.org/package/bugsnag-build-reporter)
 
 A tool for reporting your application's builds to Bugsnag. It can auto detect source control from `.git`, `.hg` and `package.json`.
