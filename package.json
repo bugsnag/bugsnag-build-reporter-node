@@ -33,7 +33,7 @@
     "concat-stream": "^1.6.0",
     "find-nearest-file": "^1.1.0",
     "meow": "^4.0.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "once": "^1.4.0",
     "pino": "^4.10.3",
     "run-parallel": "^1.1.6"
