@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0 (2021-07-05)
+
+- Drop Node 6 and upgrade meow support to avoid vulnerability warnings (#16)
+
 ## 1.0.3 (2020-04-07)
 
 - Prefer remote named `origin` when detecting source control info (#7)
