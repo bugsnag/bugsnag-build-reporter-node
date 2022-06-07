@@ -34,7 +34,7 @@ Then use like so:
 const reportBuild = require('bugsnag-build-reporter')
 reportBuild({ apiKey: 'YOUR_API_KEY', appVersion: '1.2.3' }, { /* opts */ })
   .then(() => console.log('success!'))
-  .catch(err => console.log('fail', err.messsage))
+  .catch(err => console.log('fail', err.message))
 ```
 
 ##### `reportBuild(build: object, opts: object) => Promise`
