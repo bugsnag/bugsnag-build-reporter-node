@@ -21,7 +21,7 @@ module.exports = (build, opts) => {
     }
 
     const onSuccess = () => {
-      log.info(`build info sent`)
+      log.info('build info sent')
       resolve()
     }
     makePayload(build, path, log, (err, data) => {
