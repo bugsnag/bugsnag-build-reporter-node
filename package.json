@@ -12,7 +12,7 @@
   "main": "index.js",
   "bin": "bin/cli.js",
   "scripts": {
-    "test": "standard && nyc --reporter=lcov -- tape lib/**/*.test.js"
+    "test": "standard && tape lib/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,9 @@
   "author": "Bugsnag Inc.",
   "license": "MIT",
   "devDependencies": {
-    "directory-copy": "^0.1.0",
-    "nyc": "^11.4.1",
+    "recursive-copy": "^2.0.14",
     "proxyquire": "^1.8.0",
-    "standard": "^10.0.3",
+    "standard": "^17.1.0",
     "tape": "^4.8.0",
     "tempy": "^0.2.1"
   },

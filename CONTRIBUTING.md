@@ -38,3 +38,9 @@ work on your suggested feature.
 That said, we have had some tremendous contributions from the community in the past,
 so use your best judgement. What we want to avoid here is anybody feeling like they’ve
 wasted their time!
+
+## Testing
+
+Run `npm test` to execute the unit tests.
+
+Note – you'll need to have Mercurial (`hg`) installed to execute them successfully
