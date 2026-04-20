@@ -1,6 +1,6 @@
 # bugsnag-build-reporter
-[![Build status](https://travis-ci.com/bugsnag/bugsnag-build-reporter-node.svg?branch=master)](https://travis-ci.com/bugsnag/bugsnag-build-reporter-node)
-[![NPM](https://img.shields.io/npm/v/bugsnag-build-reporter.svg)](https://npmjs.org/package/bugsnag-build-reporter)
+
+## This package is now deprecated - please use [bugsnag-cli](https://github.com/bugsnag/bugsnag-cli) to report builds to Bugsnag
 
 A tool for reporting your application's builds to Bugsnag. It can auto detect source control from `.git`, `.hg` and `package.json`.
 If you are using any of the following tools in your build, you may find the following modules (that use this one under the hood) more convenient:
